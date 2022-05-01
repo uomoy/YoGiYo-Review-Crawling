@@ -1,0 +1,244 @@
+html {
+  background: #ffffff;
+}
+
+
+
+h1, h2, details, table {
+  text-align: center;
+}
+
+form {
+  height: 40px;
+  width: 400px;
+  border: 1px solid #f0001e;
+  background: #ffffff;
+}
+
+input {
+  font-size: 16px;
+  width: 325px;
+  padding: 10px;
+  border: 0px;
+  outline: none;
+  float: left; 
+}
+
+button {
+  width: 50px;
+  height: 100%;
+  border: 0px;
+  background: #f0001e;
+  outline: none;
+  float: right;
+  color: #ffffff;
+}
+
+
+}
+table.type1 {
+  border-collapse: separate;
+  border-spacing: 1px;
+  text-align: center;
+  line-height: 1.5;
+  border-top: 1px solid #ccc;
+  margin : 20px 10px;
+}
+
+table.type1 td {
+  width: 300px;
+  padding: 10px;
+  text-align: center;
+  vertical-align: top;
+  border-bottom: 1px solid #ccc;
+}
+
+table.type1 td.small {
+  font-size: 9px;
+  text-align: left;
+  width: 50px;
+  padding: 10px;
+  vertical-align: bottom;
+  border-bottom: 1px solid #ccc;
+}
+
+div .list {
+  text-align: center;
+}
+
+a:link {
+  text-decoration: none; color: #333333;
+}
+a:visited {
+  text-decoration: none; color: #ffc800;
+}
+a:active {
+  text-decoration: none; color: #ffc800;
+}
+a:hover {
+  text-decoration: underline; color: #f0001e;
+}
+
+footer {
+  margin-bottom: 0;
+  text-align:center;
+  font-size: 14px;
+}
+
+header {
+  text-align: center;
+  font-size: 30px;
+}
+
+summary {
+  font-size: 20px;
+}
+
+ul {
+  text-align: center;
+  list-style: none;
+}
+
+li {
+  display: inline-block;
+  width: 300px;
+  height: 40px;
+  background-color: #f0001e;
+  border: solid 2px white;
+  text-align:  center;
+  line-height: 40px;
+  transition: height 0.5s ease;
+}
+
+li:hover {
+  height: 50px;
+}
+
+
+@font-face {
+  font-family: 'LotteMartHappy';
+  font-style: normal;
+  font-weight: 400;
+  src: url('//cdn.jsdelivr.net/korean-webfonts/1/corps/lottemart/LotteMartHappy/LotteMartHappyMedium.woff2') format('woff2'), url('//cdn.jsdelivr.net/korean-webfonts/1/corps/lottemart/LotteMartHappy/LotteMartHappyMedium.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'LotteMartHappy';
+  font-style: normal;
+  font-weight: 700;
+  src: url('//cdn.jsdelivr.net/korean-webfonts/1/corps/lottemart/LotteMartHappy/LotteMartHappyBold.woff2') format('woff2'), url('//cdn.jsdelivr.net/korean-webfonts/1/corps/lottemart/LotteMartHappy/LotteMartHappyBold.woff') format('woff');
+}
+
+.lottemarthappy * {
+ font-family: 'LotteMartHappy', sans-serif;
+}
+
+.normal {
+ font-style: normal;
+}
+
+.w250 {
+ font-weight: 250;
+}
+
+.w300 {
+ font-weight: 300;
+}
+
+.w350 {
+ font-weight: 350;
+}
+
+.w400 {
+ font-weight: 400;
+}
+
+.w500 {
+ font-weight: 500;
+}
+
+.w700 {
+ font-weight: 700;
+}
+
+.w800 {
+ font-weight: 800;
+}
+
+.w900 {
+ font-weight: 900;
+}
+
+
+
+
+li span {
+ line-height: 1.8;
+ font-size: 1.3em;
+}
+
+@font-face {
+  font-family: 'LotteMartDream';
+  font-style: normal;
+  font-weight: 400;
+  src: url('//cdn.jsdelivr.net/korean-webfonts/1/corps/lottemart/LotteMartDream/LotteMartDreamMedium.woff2') format('woff2'), url('//cdn.jsdelivr.net/korean-webfonts/1/corps/lottemart/LotteMartDream/LotteMartDreamMedium.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'LotteMartDream';
+  font-style: normal;
+  font-weight: 700;
+  src: url('//cdn.jsdelivr.net/korean-webfonts/1/corps/lottemart/LotteMartDream/LotteMartDreamBold.woff2') format('woff2'), url('//cdn.jsdelivr.net/korean-webfonts/1/corps/lottemart/LotteMartDream/LotteMartDreamBold.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'LotteMartDream';
+  font-style: normal;
+  font-weight: 300;
+  src: url('//cdn.jsdelivr.net/korean-webfonts/1/corps/lottemart/LotteMartDream/LotteMartDreamLight.woff2') format('woff2'), url('//cdn.jsdelivr.net/korean-webfonts/1/corps/lottemart/LotteMartDream/LotteMartDreamLight.woff') format('woff');
+}
+
+.lottemartdream * {
+ font-family: 'LotteMartDream', sans-serif;
+}
+
+.normal {
+ font-style: normal;
+}
+
+.w250 {
+ font-weight: 250;
+}
+
+.w300 {
+ font-weight: 300;
+}
+
+.w350 {
+ font-weight: 350;
+}
+
+.w400 {
+ font-weight: 400;
+}
+
+.w500 {
+ font-weight: 500;
+}
+
+.w700 {
+ font-weight: 700;
+}
+
+.w800 {
+ font-weight: 800;
+}
+
+.w900 {
+ font-weight: 900;
+}
+
+li span {
+ line-height: 1.8;
+ font-size: 1.3em;
+}

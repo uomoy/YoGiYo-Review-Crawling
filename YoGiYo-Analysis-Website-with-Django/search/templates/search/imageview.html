@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	{% load staticfiles %}
+    <meta charset="UTF-8">
+    <title>{{m.menu}}</title>
+    <link rel="stylesheet" type="text/css" href="/static/css/a.css">
+</head>
+<body>
+	<header class="lottemartdream"><p>'{{m.menu}}'의 이미지입니다.</p></header>>
+	{% if imglist %}
+		{% for img in imglist %}
+	       <img src="{{img.img}}">
+    	{% endfor %}
+    {% endif %}
+    <br><br><br><br><br><br><br><br><br><br>
+    <footer class="lottemartdream">
+        <p>2019-2H-Term-Project │ 경희대학교 소프트웨어융합학과 장호원 │ uomoy@naver.com </p>
+    </footer>
+</body>
+</html>

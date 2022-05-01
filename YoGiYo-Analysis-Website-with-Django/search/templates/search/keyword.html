@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	{% load staticfiles %}
+    <meta charset="UTF-8">
+    <title>요기어때요 분석 결과</title>
+    <link rel="stylesheet" type="text/css" href="/static/css/a.css">
+</head>
+<body>
+	<h1><a href="http://termproject.ap-northeast-2.elasticbeanstalk.com/search/"><img src="/static/img/logo.png" alt="요기어때요 로고"></a></h1>
+	<header class="lottemartdream"><p>'{{rest.restaurant}}'의 키워드 분석 결과입니다.</p></header>>
+	<nav>
+		<ul>
+			<li class="lottemarthappy"><a class="lottemartdream"style="text-decoration: none; color: white;" href="http://termproject.ap-northeast-2.elasticbeanstalk.com/search/{{rest.id}}/menu" target="_self" title="메뉴 분석">메뉴 분석</a></li>
+			<li class="lottemarthappy"><a style="text-decoration: none; color: white;" href="http://termproject.ap-northeast-2.elasticbeanstalk.com/search/{{rest.id}}/image" target="_self" title="메뉴별 이미지 보기">메뉴별 이미지 보기</a></li>
+			<li class="lottemarthappy"><a style="text-decoration: none; color: white;" href="http://termproject.ap-northeast-2.elasticbeanstalk.com/search/{{rest.id}}/keyword" target="_self" title="긍/부정 주요 키워드 추출">긍/부정 주요 키워드 추출</a></li>
+		</ul>
+	</nav><br>
+	<div>
+		{% if pos %}
+	    	<details open>
+    		<summary class="lottemartdream"><p>긍정 리뷰 주요 키워드</p></summary>
+    		<p><img src="/static/pos/{{rest.id}}.png"></p>
+    		</details>
+    	{% endif %}
+    </div>
+    <div>
+    	{% if neg %}
+	    	<details open>
+    		<summary class="lottemartdream"><p>부정 리뷰 주요 키워드</p></summary>
+    		<p><img src="/static/neg/{{rest.id}}.png"></p>
+    		</details>
+    	{% endif %}
+    </div>
+    <br><br><br><br><br>
+    <footer class="lottemartdream">
+    	<p>2019-2H-Term-Project │ 경희대학교 소프트웨어융합학과 장호원 │ uomoy@naver.com </p>
+    </footer>
+</body>
+</html>

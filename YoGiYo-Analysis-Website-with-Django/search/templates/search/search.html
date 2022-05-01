@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	{% load staticfiles %}
+    <meta charset="UTF-8">
+    <title>요기어때요</title>
+    <link rel="stylesheet" type="text/css" href="/static/css/a.css">
+</head>
+<body>
+	<header id="intro">
+		<h1><a href="http://termproject.ap-northeast-2.elasticbeanstalk.com/search/"><img src="/static/img/logo.png" alt="요기어때요 로고"></a></h1>
+	</header>
+        <div>
+        <form method="post" action="/search/" style="margin-left: auto; margin-right: auto;">
+        	{% csrf_token %}
+        	<input type="text" name="srh" placeholder="음식점명을 입력하세요">
+        	<button type="submit">검색</button>
+        </form><br><br><br>
+        </div>
+        	{% if messages %}
+        	    <ul class="messages">
+        	    	{% for k in messages %}
+        	    	<li>{{k}}</li>
+        	    	{% endfor %}
+        	    </ul>
+        	{% endif %}
+        </div><br>
+        <div class="list">
+        	{% if sr %}
+        		<table  class="type1" style="margin-left: auto; margin-right: auto;">
+        		{% for k in sr %}
+        		<tr>
+        			<td class="lottemarthappy"><a href="{{k.id}}/" target="_self" title="소융 화이팅">{{k.restaurant}}</a></td>
+        			<td class="small">리뷰 {{k.review_num}}</td>
+        		</tr>
+       		 	{% endfor %}
+       		 	</table>
+       		 {% endif %}
+        </div>
+    </div>
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+    <footer class="lottemartdream">
+    	<p>2019-2H-Term-Project │ 경희대학교 소프트웨어융합학과 장호원 │ uomoy@naver.com </p>
+    </footer>
+</body>
+</html>
